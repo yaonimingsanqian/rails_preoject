@@ -3,8 +3,9 @@ class UsersController < ApplicationController
 
   # GET /users
   # GET /users.json
+
   def index
-    @users = User.all
+    @users = User.all    #将查询出来的数据赋值给users变量
   end
 
   # GET /users/1
@@ -14,7 +15,7 @@ class UsersController < ApplicationController
 
   # GET /users/new
   def new
-    @user = User.new
+    @users = User.new
   end
 
   # GET /users/1/edit
